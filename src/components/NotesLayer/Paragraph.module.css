@@ -1,0 +1,18 @@
+.paragraph {
+    margin: 8px 0;
+    line-height: 1.5;
+    position: relative;
+    cursor: pointer; /* Indicate interactivity */
+}
+
+.paragraph:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.paragraph.selected {
+background-color: rgba(0, 122, 255, 0.1);
+}
+
+.paragraph.connected {
+    background-color: yellow; /* Adjusted selector for specificity */
+}

@@ -1,0 +1,13 @@
+.link {
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}
+
+.link.highlighted {
+    opacity: 1;
+    stroke-width: 2px;
+}
+
+.link.connected {
+    opacity: 0.7;
+}

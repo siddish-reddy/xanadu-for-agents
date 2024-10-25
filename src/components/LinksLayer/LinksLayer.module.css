@@ -1,0 +1,63 @@
+.linksLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5;
+  opacity: 0.3;
+  transition: all 0.2s ease;
+}
+
+.link.highlighted {
+  opacity: 0.8;
+  stroke: #007AFF; /* Highlight color */
+  stroke-width: 2.5;
+}
+
+.link.connected {
+  opacity: 0.6;
+  stroke: #666;
+  stroke-width: 1.75;
+}
+
+.link.invisible {
+  opacity: 0;
+  stroke-dasharray: 4;
+}
+
+.link.hovered {
+  opacity: 0.8;
+  stroke: #FFA500; /* Highlight color for hovered links */
+  stroke-width: 2;
+}
+
+.link.selected {
+  opacity: 1;
+  stroke: #FF0000; /* Highlight color for selected links */
+  stroke-width: 2.5;
+}
+
+/* Add styles for backward links */
+.backward-link {
+    background-color: lightblue; /* Example color */
+    /* Add other styles as needed */
+}
+
+/* Add styles for forward links */
+.forward-link {
+    background-color: lightgreen; /* Example color */
+    /* Add other styles as needed */
+}
+
+.link.connectedHighlighted {
+    stroke: #FFA500; /* Distinct color for connected highlights */
+    stroke-width: 3px;
+}

@@ -1,0 +1,33 @@
+.note {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+  min-width: 200px;
+  max-width: 400px;
+  height: 260px; /* Fixed height */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.noteContent {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Add scrollbar styling */
+.noteContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.noteContent::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.note.selected {
+  box-shadow: 0 0 0 2px #007AFF;
+}
